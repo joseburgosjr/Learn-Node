@@ -1,0 +1,10 @@
+extend layout
+
+include mixins/_loginForm
+include mixins/_forgot
+
+block content
+  .inner
+    h2= title
+    +loginForm()
+    +forgotForm()
